@@ -1,0 +1,23 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam sequenceMessageAlign center
+hide footbox
+title SD-01 - Publish a skill offer
+actor "Student" as Student
+boundary ":SkillController" as Controller
+control ":ListingService" as Service
+participant ":SkillListing\nRepository" as Repo
+Student -> Controller: submit listing form
+Controller -> Service: create(authenticatedStudentId, form)
+Service -> Service: validate required fields and category
+alt [invalid input]
+Service --> Controller: field errors
+Controller --> Student: form with feedback
+else [valid input]
+Service -> Repo: save(new SkillListing(owner = current student))
+Repo --> Service: saved listing
+Service --> Controller: listing details (after commit)
+Controller --> Student: redirect to listing
+end
+@enduml

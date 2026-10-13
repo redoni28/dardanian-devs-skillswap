@@ -1,0 +1,31 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam sequenceMessageAlign center
+hide footbox
+title SD-03 - Accept without double booking
+actor "Tutor" as Tutor
+boundary ":SessionController" as Controller
+control ":SessionService" as Service
+participant ":Student\nRepository" as Students
+participant ":SessionRequest\nRepository" as Requests
+Tutor -> Controller: accept(requestId)
+Controller -> Service: accept(currentStudentId, requestId)
+Service -> Requests: findSummary(requestId): participant IDs
+Service -> Students: lock both student rows in ascending ID order
+Service -> Requests: findByIdForUpdate(requestId)
+Service -> Service: check tutor, PENDING, and future start
+Service -> Requests: existsAcceptedOverlap(both students, start, end)
+alt [any check fails or overlap exists]
+Service --> Controller: reject; rollback; no change
+else [all checks pass; no overlap]
+Service -> Requests: request.accept(); save(request)
+Service --> Controller: ACCEPTED (after commit)
+end
+note over Service, Requests
+The complete operation runs in one service transaction.
+Lookup returns are implicit. A missing request immediately aborts.
+The service invokes request.accept() before repository.save(request).
+Controller redirects only after commit.
+end note
+@enduml

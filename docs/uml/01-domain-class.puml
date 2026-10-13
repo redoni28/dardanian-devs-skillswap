@@ -1,0 +1,60 @@
+@startuml
+title CD-01 - SkillSwap domain model
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam backgroundColor white
+hide empty members
+class Student {
+ - id: Long
+ - name: String
+ - email: String {unique}
+ - passwordHash: String
+ - bio: String
+ - learningInterests: String
+ + updateProfile(name, bio, interests)
+}
+class SkillListing {
+ - id: Long
+ - title: String
+ - description: String
+ - availabilityNote: String
+ - active: boolean
+ + edit(title, description, note)
+ + archive()
+}
+class SkillCategory {
+ - id: Long
+ - name: String
+}
+class SessionRequest {
+ - id: Long
+ - startAt: Instant
+ - endAt: Instant
+ - meetingDetails: String
+ - message: String
+ - status: SessionStatus
+ + accept(): void
+ + decline(): void
+ + cancel(): void
+ + complete(): void
+}
+enum SessionStatus {
+ PENDING
+ ACCEPTED
+ DECLINED
+ CANCELLED
+ COMPLETED
+}
+Student "1" -- "0..*" SkillListing : owns
+SkillCategory "1" -- "0..*" SkillListing : categorizes
+SkillListing "1" -- "0..*" SessionRequest : requests for
+Student "1" -- "0..*" SessionRequest : learner
+SessionRequest ..> SessionStatus : status
+note bottom of SessionRequest
+ Tutor = listing.owner. A learner cannot book their own listing.
+ Each request has exactly one listing and one learner.
+ Times and participants are immutable after creation.
+ SessionService checks permissions, time guards and booking conflicts.
+ Domain methods guard the allowed status transitions.
+end note
+@enduml

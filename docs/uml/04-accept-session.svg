@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="756" height="335" preserveAspectRatio="xMinYMin meet" viewBox="0 0 756 335" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>04-accept-session - SkillSwap</title>
+	<desc>Proposed UML design for SkillSwap by Dardanian Devs.</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="756" height="335"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-335)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="7.0" y="299" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="58.34619140625" y="320.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,640) scale(1,-1)">Tutor</text>
+			<path d="M 68,299 L 68,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="162.0" y="299" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="190.8572998046875" y="320.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,640) scale(1,-1)">:SessionController</text>
+			<path d="M 223,299 L 223,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="317.0" y="299" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="351.04736328125" y="320.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,640) scale(1,-1)">:SessionService</text>
+			<path d="M 378,299 L 378,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="472.0" y="299" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="517.8905029296875" y="320.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,640) scale(1,-1)">:Student</text>
+			<text x="514.3958740234375" y="309.03" style="font-family: Calibri, Arial, sans-serif; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,618) scale(1,-1)">Repository</text>
+			<path d="M 533,299 L 533,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="627.0" y="299" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="659.2772216796875" y="320.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,640) scale(1,-1)">:SessionRequest</text>
+			<text x="669.3958740234375" y="309.03" style="font-family: Calibri, Arial, sans-serif; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,618) scale(1,-1)">Repository</text>
+			<path d="M 688,299 L 688,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 68,283 L 223,283 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="223 283, 217.7774 280.4772, 217.7774 285.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="109.8771484375" y="285.2" width="71.24570312499999" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="113.8771484375" y="289.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,579) scale(1,-1)">accept(requestId)</text>
+			<path d="M 223,260 L 378,260 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="378 260, 372.7774 257.4772, 372.7774 262.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="232.05546875" y="262.2" width="136.88906249999997" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="236.05546875" y="266.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,533) scale(1,-1)">accept(currentStudentId, requestId)</text>
+			<path d="M 378,237 L 688,237 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="688 237, 682.7774 234.4772, 682.7774 239.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="456.99296875" y="239.2" width="152.01406249999997" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="460.99296875" y="243.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,487) scale(1,-1)">findSummary(requestId): participant IDs</text>
+			<path d="M 378,214 L 533,214 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="533 214, 527.7774 211.4772, 527.7774 216.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="371.4943359375" y="216.2" width="168.01132812500003" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="375.4943359375" y="220.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,441) scale(1,-1)">lock both student rows in ascending ID order</text>
+			<path d="M 378,190 L 688,190 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="688 190, 682.7774 187.4772, 682.7774 192.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="475.30625" y="192.2" width="115.38750000000005" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="479.30625" y="196.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,393) scale(1,-1)">findByIdForUpdate(requestId)</text>
+			<path d="M 378,170 L 404,170 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 404,170 L 404,158 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 404,158 L 378,158 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="378 158, 383.2226 160.5228, 383.2226 155.4772" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,45%); fill-rule: evenodd;"/>
+			<rect x="407.0" y="159.5" width="142.07421875" height="13.5" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="411.0" y="164.03" style="font-family: Calibri, Arial, sans-serif; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,328) scale(1,-1)">check tutor, PENDING, and future start</text>
+			<path d="M 378,138 L 688,138 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="688 138, 682.7774 135.4772, 682.7774 140.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="441.2814453125" y="140.2" width="183.43710937500003" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="445.2814453125" y="144.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,289) scale(1,-1)">existsAcceptedOverlap(both students, start, end)</text>
+			<rect x="0" y="4" width="756" height="116" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<rect x="0" y="104" width="35" height="16" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(95%,96%,97%); fill-rule: evenodd;"/>
+			<text x="5" y="109.44" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,218) scale(1,-1)">alt</text>
+			<rect x="39" y="106" width="114.96484375" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="43" y="110.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,220) scale(1,-1)">[any check fails or overlap exists]</text>
+			<path d="M 378,92 L 223,92 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 228.222593,94.5228 L 223,92 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 228.222593,89.4772 L 223,92 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="249.2236328125" y="94.2" width="102.552734375" height="13.799999999999997" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="253.2236328125" y="98.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,197) scale(1,-1)">reject; rollback; no change</text>
+			<path d="M 0,77 L 756,77 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="4" y="62" width="98.6875" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="8" y="66.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,132) scale(1,-1)">[all checks pass; no overlap]</text>
+			<path d="M 378,46 L 688,46 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="688 46, 682.7774 43.4772, 682.7774 48.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="473.110546875" y="48.2" width="119.77890625000003" height="13.799999999999997" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="477.110546875" y="52.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,105) scale(1,-1)">request.accept(); save(request)</text>
+			<path d="M 378,17 L 223,17 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 228.222593,19.5228 L 223,17 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 228.222593,14.4772 L 223,17 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="250.84140625" y="19.2" width="99.31718750000002" height="13.8" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="254.84140625" y="23.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,47) scale(1,-1)">ACCEPTED (after commit)</text>
+		</g>
+	</g>
+</svg>

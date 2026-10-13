@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="756" height="351" preserveAspectRatio="xMinYMin meet" viewBox="0 0 756 351" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>01-domain-class - SkillSwap</title>
+	<desc>Proposed UML design for SkillSwap by Dardanian Devs.</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="756" height="351"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-351)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="12" y="205" width="220" height="134" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="12" y="313" width="220" height="26" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="103.9638671875" y="321.98" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 11px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,643) scale(1,-1)">Student</text>
+			<text x="22" y="298.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,597) scale(1,-1)">- id: Long</text>
+			<text x="22" y="286.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,573) scale(1,-1)">- name: String</text>
+			<text x="22" y="274.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,549) scale(1,-1)">- email: String {unique}</text>
+			<text x="22" y="262.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,525) scale(1,-1)">- passwordHash: String</text>
+			<text x="22" y="250.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,501) scale(1,-1)">- bio: String</text>
+			<text x="22" y="238.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,477) scale(1,-1)">- learningInterests: String</text>
+			<path d="M 12,229 L 232,229 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<text x="22" y="214.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,429) scale(1,-1)">+ updateProfile(name, bio, interests)</text>
+			<rect x="348" y="205" width="235" height="134" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="348" y="313" width="235" height="26" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="441.520751953125" y="321.98" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 11px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,643) scale(1,-1)">SkillListing</text>
+			<text x="358" y="298.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,597) scale(1,-1)">- id: Long</text>
+			<text x="358" y="286.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,573) scale(1,-1)">- title: String</text>
+			<text x="358" y="274.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,549) scale(1,-1)">- description: String</text>
+			<text x="358" y="262.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,525) scale(1,-1)">- availabilityNote: String</text>
+			<text x="358" y="250.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,501) scale(1,-1)">- active: boolean</text>
+			<path d="M 348,241 L 583,241 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<text x="358" y="226.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,453) scale(1,-1)">+ edit(title, description, note)</text>
+			<text x="358" y="214.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,429) scale(1,-1)">+ archive()</text>
+			<rect x="620" y="277" width="126" height="62" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="620" y="313" width="126" height="26" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="653.28173828125" y="321.98" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 11px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,643) scale(1,-1)">SkillCategory</text>
+			<text x="630" y="298.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,597) scale(1,-1)">- id: Long</text>
+			<text x="630" y="286.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,573) scale(1,-1)">- name: String</text>
+			<rect x="348" y="2" width="260" height="170" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="348" y="146" width="260" height="26" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="442.3466796875" y="154.98" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 11px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,309) scale(1,-1)">SessionRequest</text>
+			<text x="358" y="131.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,263) scale(1,-1)">- id: Long</text>
+			<text x="358" y="119.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,239) scale(1,-1)">- startAt: Instant</text>
+			<text x="358" y="107.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,215) scale(1,-1)">- endAt: Instant</text>
+			<text x="358" y="95.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,191) scale(1,-1)">- meetingDetails: String</text>
+			<text x="358" y="83.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,167) scale(1,-1)">- message: String</text>
+			<text x="358" y="71.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,143) scale(1,-1)">- status: SessionStatus</text>
+			<path d="M 348,62 L 608,62 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<text x="358" y="47.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,95) scale(1,-1)">+ accept(): void</text>
+			<text x="358" y="35.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,71) scale(1,-1)">+ decline(): void</text>
+			<text x="358" y="23.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,47) scale(1,-1)">+ cancel(): void</text>
+			<text x="358" y="11.620000000000001" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,23) scale(1,-1)">+ complete(): void</text>
+			<rect x="625" y="66" width="121" height="106" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="625" y="138" width="121" height="34" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="656.373046875" y="160.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(3%,49%,54%); stroke:none;" transform="translate(0,320) scale(1,-1)">&lt;&lt;enumeration&gt;&gt;</text>
+			<text x="654.210693359375" y="145.98" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 11px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,291) scale(1,-1)">SessionStatus</text>
+			<text x="635" y="123.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,247) scale(1,-1)">PENDING</text>
+			<text x="635" y="111.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,223) scale(1,-1)">ACCEPTED</text>
+			<text x="635" y="99.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,199) scale(1,-1)">DECLINED</text>
+			<text x="635" y="87.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,175) scale(1,-1)">CANCELLED</text>
+			<text x="635" y="75.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,151) scale(1,-1)">COMPLETED</text>
+			<path d="M 232,294 L 348,294 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="276.285888671875" y="301" width="27.42822265625" height="14" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="280.285888671875" y="305.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,611) scale(1,-1)">owns</text>
+			<rect x="237.71923828125" y="274" width="12.5615234375" height="14" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="241.71923828125" y="278.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,557) scale(1,-1)">1</text>
+			<rect x="318.2060546875" y="274" width="21.587890625" height="14" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="322.2060546875" y="278.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,557) scale(1,-1)">0..*</text>
+			<path d="M 583,294 L 620,294 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="575.9609375" y="269" width="20.078125" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="579.9609375" y="273.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,546) scale(1,-1)">0..*</text>
+			<rect x="608.97265625" y="301" width="12.0546875" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="612.97265625" y="305.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,610) scale(1,-1)">1</text>
+			<text x="596.865234375" y="245.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,490) scale(1,-1)">category</text>
+			<path d="M 470,205 L 470,172 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="449.97265625" y="193" width="12.0546875" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="453.97265625" y="197.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,394) scale(1,-1)">1</text>
+			<rect x="441.9609375" y="172" width="20.078125" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="445.9609375" y="176.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,352) scale(1,-1)">0..*</text>
+			<rect x="496.32421875" y="182" width="47.3515625" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="500.32421875" y="186.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,372) scale(1,-1)">requests for</text>
+			<path d="M 122,205 L 122,113 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 122,113 L 348,113 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="102.71923828125" y="177" width="12.5615234375" height="14" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="106.71923828125" y="181.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,363) scale(1,-1)">1</text>
+			<rect x="317.2060546875" y="120" width="21.587890625" height="14" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="321.2060546875" y="124.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,249) scale(1,-1)">0..*</text>
+			<rect x="191.831787109375" y="118" width="34.33642578125" height="14" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="195.831787109375" y="122.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,245) scale(1,-1)">learner</text>
+			<path d="M 608,76 L 625,76 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 619.777407,73.4772 L 625,76 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 619.777407,78.5228 L 625,76 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="12" y="22" width="301" height="57" rx="3" ry="3" style="stroke: rgb(95%,96%,97%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(95%,96%,97%); fill-rule: evenodd;"/>
+			<text x="24" y="58.8" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 10px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,117) scale(1,-1)">Tutor is derived from request.listing.owner.</text>
+			<text x="24" y="40.62" style="font-family: Calibri, Arial, sans-serif; font-size: 9px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,81) scale(1,-1)">One Student may be a learner, a tutor, or both.</text>
+		</g>
+	</g>
+</svg>

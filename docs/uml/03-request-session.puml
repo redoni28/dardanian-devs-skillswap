@@ -1,0 +1,24 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam sequenceMessageAlign center
+hide footbox
+title SD-02 - Request a learning session
+actor "Learner" as Learner
+boundary ":SessionController" as Controller
+control ":SessionService" as Service
+participant ":SkillListing\nRepository" as Listings
+participant ":SessionRequest\nRepository" as Requests
+Learner -> Controller: submit request form
+Controller -> Service: requestSession(currentStudentId, form)
+Service -> Listings: findActiveByIdForShare(listingId)
+Listings --> Service: listing + owner / not found
+alt [missing/inactive listing, self-booking, or invalid time/details]
+Service --> Controller: validation error; no insert
+else [valid request]
+Service -> Requests: save(new SessionRequest(status = PENDING))
+Requests --> Service: saved request
+Service --> Controller: request details (after commit)
+Controller --> Learner: redirect to pending request
+end
+@enduml

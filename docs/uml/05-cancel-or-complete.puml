@@ -1,0 +1,23 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam sequenceMessageAlign center
+hide footbox
+title SD-04 - Cancel or complete a session
+actor "Participant" as Student
+boundary ":SessionController" as Controller
+control ":SessionService" as Service
+participant ":SessionRequest\nRepository" as Requests
+Student -> Controller: cancel(requestId) or complete(requestId)
+Controller -> Service: apply action(currentStudentId, requestId)
+Service -> Requests: findByIdForUpdate(requestId)
+Requests --> Service: current request / not found
+alt [not found, unauthorized, or state/time guard fails]
+Service --> Controller: reject; no state change
+else [valid action under page 5 rules]
+Service -> Service: request.cancel() or request.complete()
+Service -> Requests: save(request)
+Service --> Controller: updated status (after commit)
+Controller --> Student: redirect to session
+end
+@enduml

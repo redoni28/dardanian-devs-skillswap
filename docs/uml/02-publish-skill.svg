@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="756" height="316" preserveAspectRatio="xMinYMin meet" viewBox="0 0 756 316" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>02-publish-skill - SkillSwap</title>
+	<desc>Proposed UML design for SkillSwap by Dardanian Devs.</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="756" height="316"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-316)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="7.0" y="280" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="54.06298828125" y="301.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,602) scale(1,-1)">Student</text>
+			<path d="M 68,280 L 68,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="213.66666666666663" y="280" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="248.49222819010413" y="301.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,602) scale(1,-1)">:SkillController</text>
+			<path d="M 274.666667,280 L 274.666667,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="420.3333333333333" y="280" width="121.99999999999994" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="456.1798909505208" y="301.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,602) scale(1,-1)">:ListingService</text>
+			<path d="M 481.333333,280 L 481.333333,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="627.0" y="280" width="122.0" height="35" rx="2" ry="2" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<text x="668.298095703125" y="301.03" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,602) scale(1,-1)">:SkillListing</text>
+			<text x="669.3958740234375" y="290.03" style="font-family: Calibri, Arial, sans-serif; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,580) scale(1,-1)">Repository</text>
+			<path d="M 688,280 L 688,5 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 68,262 L 274.666667,262 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="274.6667 262, 269.4441 259.4772, 269.4441 264.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="133.6823567708333" y="264.2" width="75.30195312499998" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="137.6823567708333" y="268.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,537) scale(1,-1)">submit listing form</text>
+			<path d="M 274.666667,234 L 481.333333,234 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="481.3333 234, 476.1107 231.4772, 476.1107 236.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="306.526171875" y="236.2" width="142.94765624999997" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="310.526171875" y="240.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,481) scale(1,-1)">create(authenticatedStudentId, form)</text>
+			<path d="M 481.333333,211 L 507.333333,211 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 507.333333,211 L 507.333333,199 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 507.333333,199 L 481.333333,199 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="481.3333 199, 486.5559 201.5228, 486.5559 196.4772" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,45%); fill-rule: evenodd;"/>
+			<rect x="510.33333333333326" y="200.5" width="134.400146484375" height="13.5" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="514.3333333333333" y="205.03" style="font-family: Calibri, Arial, sans-serif; font-size: 8.5px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,410) scale(1,-1)">validate required fields and category</text>
+			<rect x="0" y="7" width="756" height="176" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<rect x="0" y="167" width="35" height="16" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(95%,96%,97%); fill-rule: evenodd;"/>
+			<text x="5" y="172.44" style="font-family: Calibri, Arial, sans-serif; font-weight: 700; font-size: 8px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,344) scale(1,-1)">alt</text>
+			<rect x="39" y="169" width="53.19921875" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="43" y="173.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,346) scale(1,-1)">[invalid input]</text>
+			<path d="M 481.333333,152 L 274.666667,152 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 279.88926,154.5228 L 274.666667,152 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 279.88926,149.4772 L 274.666667,152 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="354.3095703125" y="154.2" width="47.380859375" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="358.3095703125" y="158.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,317) scale(1,-1)">field errors</text>
+			<path d="M 274.666667,128 L 68,128 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 73.222593,130.5228 L 68,128 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 73.222593,125.4772 L 68,128 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="132.37825520833331" y="130.2" width="77.91015625" height="13.800000000000011" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="136.37825520833331" y="134.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,269) scale(1,-1)">form with feedback</text>
+			<path d="M 0,110 L 756,110 Z" style="stroke: rgb(80%,85%,87%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<rect x="4" y="95" width="47.16015625" height="13" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="8" y="99.44" style="font-family: Calibri, Arial, sans-serif; font-size: 8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,198) scale(1,-1)">[valid input]</text>
+			<path d="M 481.333333,81 L 688,81 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<polygon points="688 81, 682.7774 78.4772, 682.7774 83.5228" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<rect x="496.50162760416663" y="83.2" width="176.330078125" height="13.799999999999997" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="500.50162760416663" y="87.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,175) scale(1,-1)">save(new SkillListing(owner = current student))</text>
+			<path d="M 688,58 L 481.333333,58 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 486.555927,60.5228 L 481.333333,58 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 486.555927,55.4772 L 481.333333,58 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="558.7483072916666" y="60.2" width="51.836718750000045" height="13.799999999999997" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="562.7483072916666" y="64.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,129) scale(1,-1)">saved listing</text>
+			<path d="M 481.333333,35 L 274.666667,35 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 279.88926,37.5228 L 274.666667,35 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 279.88926,32.4772 L 274.666667,35 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="323.576171875" y="37.2" width="108.84765625" height="13.799999999999997" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="327.576171875" y="41.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,83) scale(1,-1)">listing details (after commit)</text>
+			<path d="M 274.666667,12 L 68,12 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85; stroke-dasharray: 4, 3;"/>
+			<path d="M 73.222593,14.5228 L 68,12 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<path d="M 73.222593,9.4772 L 68,12 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 0.85;"/>
+			<rect x="136.8405598958333" y="14.2" width="68.98554687500001" height="13.8" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="140.8405598958333" y="18.784" style="font-family: Calibri, Arial, sans-serif; font-size: 8.8px;fill: rgb(8%,19%,27%); stroke:none;" transform="translate(0,37) scale(1,-1)">redirect to listing</text>
+		</g>
+	</g>
+</svg>
