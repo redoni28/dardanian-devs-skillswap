@@ -4,7 +4,7 @@
 **Members:** Redon, Leanda, Rinor, Granit  
 **Presentation date:** October 28, 2026  
 **Duration:** 5 minutes  
-**Report:** [SWEN383_P1_DardanianDevs.pdf](./SWEN383_P1_DardanianDevs.pdf)
+**Report:** [SWEN383_P1_DardanianDevs.pdf](./docs/SWEN383_P1_DardanianDevs.pdf)
 
 ## 0:00–0:45 — Project purpose
 **Show report page 1.**
