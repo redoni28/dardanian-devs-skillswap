@@ -1,0 +1,37 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam sequenceMessageAlign center
+hide footbox
+
+title SD-05 - Archive a skill offer
+actor "Student" as Student
+boundary ":SkillController" as Controller
+control ":ListingService" as Service
+participant ":SkillListing\nRepository" as Listings
+participant "listing:SkillListing" as Listing
+
+Student -> Controller: archive(listingId)
+Controller -> Service: archive(currentStudentId, listingId)
+Service -> Listings: findByIdForUpdate(listingId)
+Listings --> Service: current listing + owner / not found
+
+Service -> Service: check listing ownership
+alt missing listing or unauthorized
+Service --> Controller: reject; no change
+Controller --> Student: unavailable or access denied
+else owned listing already inactive
+Service --> Controller: already archived; no save
+Controller --> Student: current archived status
+else owned listing active
+Service -> Listing: archive()
+Service -> Listings: save(listing)
+Listings --> Service: saved listing
+Service --> Controller: archived (after commit)
+Controller --> Student: redirect to own listings
+end
+
+' One service transaction holds the write lock until commit/rollback.
+' currentStudentId comes from login. archive() sets active=false and retains requests.
+' Lock/save/commit failures roll back and return a retry message instead of success.
+@enduml
