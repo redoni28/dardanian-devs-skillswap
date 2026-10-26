@@ -1,0 +1,32 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam sequenceMessageAlign center
+hide footbox
+
+title SD-06 - Search and filter skills
+actor "Student" as Student
+boundary ":SkillController" as Controller
+control ":ListingService" as Service
+participant ":SkillListing\nRepository" as Listings
+
+Student -> Controller: submit search text and category
+Controller -> Service: search(query, categoryId)
+Service -> Service: normalize and validate criteria
+
+alt invalid search criteria
+Service --> Controller: field errors; no search
+Controller --> Student: search form with feedback
+else valid search criteria
+Service -> Listings: searchActive(normalizedQuery, categoryId)
+Listings --> Service: matching listings / empty list
+Service -> Service: prepare public listing summaries
+Service --> Controller: listing summaries / empty list
+Controller --> Student: results or no-results message
+end
+
+' Signed-in browsing only; blank text/category adds no corresponding restriction.
+' Query: active=true AND (title OR description matches) AND optional category.
+' Binding errors stop at the controller; persistence errors return retry feedback.
+' No writes or booking locks. Results omit private data; SD-02 rechecks activity.
+@enduml
